@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    min-height: 200px;
+    box-shadow: 1px 1px 10px darkred;
+}
+.hands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 1.5rem;
+}
+.hands > div{
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.hands .name{
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 0.3rem;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.71), 
+    inset -1px -1px 4px rgba(255, 255, 255, 0.637);
+    margin: 15px 7px 7px;
+    transition: all 0.3s;
+}
+.name:hover{
+    transform: scale(1.08);
+}
+.result-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 60%;
+    align-items:end;
+    padding: 1rem;
+}
+.result-div div{
+    font-size: 1.5rem;
+}
+.win{
+    color: rgb(5, 180, 5);
+}
+.lose{
+    color: red;
+}
+.tie{
+    color: rgb(71, 71, 255);
+}
+.choices{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.choices div{
+    font-size: 1.4rem;
+    margin-left: 15px;
+}
+.choices div span{
+    color: darkcyan;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
